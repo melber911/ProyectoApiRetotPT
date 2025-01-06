@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\WORK-MELBER\\REPOSITORIO-LOCAL\\WepApiPT_TDD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{77C957DA-EDC4-4D80-86C7-3F0F62ABC4A8}|RETOPT.API\\RETOPT.API.csproj|c:\\work-melber\\repositorio-local\\wepapipt_tdd\\retopt.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77C957DA-EDC4-4D80-86C7-3F0F62ABC4A8}|RETOPT.API\\RETOPT.API.csproj|solutionrelative:retopt.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77C957DA-EDC4-4D80-86C7-3F0F62ABC4A8}|RETOPT.API\\RETOPT.API.csproj|c:\\work-melber\\repositorio-local\\wepapipt_tdd\\retopt.api\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77C957DA-EDC4-4D80-86C7-3F0F62ABC4A8}|RETOPT.API\\RETOPT.API.csproj|solutionrelative:retopt.api\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77C957DA-EDC4-4D80-86C7-3F0F62ABC4A8}|RETOPT.API\\RETOPT.API.csproj|c:\\work-melber\\repositorio-local\\wepapipt_tdd\\retopt.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{77C957DA-EDC4-4D80-86C7-3F0F62ABC4A8}|RETOPT.API\\RETOPT.API.csproj|solutionrelative:retopt.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77C957DA-EDC4-4D80-86C7-3F0F62ABC4A8}|RETOPT.API\\RETOPT.API.csproj|c:\\work-melber\\repositorio-local\\wepapipt_tdd\\retopt.api\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77C957DA-EDC4-4D80-86C7-3F0F62ABC4A8}|RETOPT.API\\RETOPT.API.csproj|solutionrelative:retopt.api\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\WORK-MELBER\\REPOSITORIO-LOCAL\\WepApiPT_TDD\\RETOPT.API\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "RETOPT.API\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\WORK-MELBER\\REPOSITORIO-LOCAL\\WepApiPT_TDD\\RETOPT.API\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "RETOPT.API\\Controllers\\UsuarioController.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAADwvzYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T18:02:15.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductoController.cs",
+              "DocumentMoniker": "C:\\WORK-MELBER\\REPOSITORIO-LOCAL\\WepApiPT_TDD\\RETOPT.API\\Controllers\\ProductoController.cs",
+              "RelativeDocumentMoniker": "RETOPT.API\\Controllers\\ProductoController.cs",
+              "ToolTip": "C:\\WORK-MELBER\\REPOSITORIO-LOCAL\\WepApiPT_TDD\\RETOPT.API\\Controllers\\ProductoController.cs",
+              "RelativeToolTip": "RETOPT.API\\Controllers\\ProductoController.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAA7wG4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T17:30:58.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\WORK-MELBER\\REPOSITORIO-LOCAL\\WepApiPT_TDD\\RETOPT.API\\appsettings.json",
+              "RelativeDocumentMoniker": "RETOPT.API\\appsettings.json",
+              "ToolTip": "C:\\WORK-MELBER\\REPOSITORIO-LOCAL\\WepApiPT_TDD\\RETOPT.API\\appsettings.json",
+              "RelativeToolTip": "RETOPT.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-06T17:30:46.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\WORK-MELBER\\REPOSITORIO-LOCAL\\WepApiPT_TDD\\RETOPT.API\\Program.cs",
+              "RelativeDocumentMoniker": "RETOPT.API\\Program.cs",
+              "ToolTip": "C:\\WORK-MELBER\\REPOSITORIO-LOCAL\\WepApiPT_TDD\\RETOPT.API\\Program.cs",
+              "RelativeToolTip": "RETOPT.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T17:30:36.508Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

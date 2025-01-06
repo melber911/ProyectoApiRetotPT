@@ -1,0 +1,11 @@
+C:\WORK-MELBER\REPOSITORIO-LOCAL\WepApiPT_TDD\RETOPT.Domain\bin\Debug\net8.0\RETOPT.Domain.deps.json
+C:\WORK-MELBER\REPOSITORIO-LOCAL\WepApiPT_TDD\RETOPT.Domain\bin\Debug\net8.0\RETOPT.Domain.dll
+C:\WORK-MELBER\REPOSITORIO-LOCAL\WepApiPT_TDD\RETOPT.Domain\bin\Debug\net8.0\RETOPT.Domain.pdb
+C:\WORK-MELBER\REPOSITORIO-LOCAL\WepApiPT_TDD\RETOPT.Domain\obj\Debug\net8.0\RETOPT.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\WORK-MELBER\REPOSITORIO-LOCAL\WepApiPT_TDD\RETOPT.Domain\obj\Debug\net8.0\RETOPT.Domain.AssemblyInfoInputs.cache
+C:\WORK-MELBER\REPOSITORIO-LOCAL\WepApiPT_TDD\RETOPT.Domain\obj\Debug\net8.0\RETOPT.Domain.AssemblyInfo.cs
+C:\WORK-MELBER\REPOSITORIO-LOCAL\WepApiPT_TDD\RETOPT.Domain\obj\Debug\net8.0\RETOPT.Domain.csproj.CoreCompileInputs.cache
+C:\WORK-MELBER\REPOSITORIO-LOCAL\WepApiPT_TDD\RETOPT.Domain\obj\Debug\net8.0\RETOPT.Domain.dll
+C:\WORK-MELBER\REPOSITORIO-LOCAL\WepApiPT_TDD\RETOPT.Domain\obj\Debug\net8.0\refint\RETOPT.Domain.dll
+C:\WORK-MELBER\REPOSITORIO-LOCAL\WepApiPT_TDD\RETOPT.Domain\obj\Debug\net8.0\RETOPT.Domain.pdb
+C:\WORK-MELBER\REPOSITORIO-LOCAL\WepApiPT_TDD\RETOPT.Domain\obj\Debug\net8.0\ref\RETOPT.Domain.dll

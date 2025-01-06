@@ -1,0 +1,15 @@
+C:\WORK-MELBER\REPOSITORIO-LOCAL\WepApiPT_TDD\RETOPT.Infrastructure\bin\Debug\net8.0\RETOPT.Infrastructure.deps.json
+C:\WORK-MELBER\REPOSITORIO-LOCAL\WepApiPT_TDD\RETOPT.Infrastructure\bin\Debug\net8.0\RETOPT.Infrastructure.dll
+C:\WORK-MELBER\REPOSITORIO-LOCAL\WepApiPT_TDD\RETOPT.Infrastructure\bin\Debug\net8.0\RETOPT.Infrastructure.pdb
+C:\WORK-MELBER\REPOSITORIO-LOCAL\WepApiPT_TDD\RETOPT.Infrastructure\bin\Debug\net8.0\RETOPT.Domain.dll
+C:\WORK-MELBER\REPOSITORIO-LOCAL\WepApiPT_TDD\RETOPT.Infrastructure\bin\Debug\net8.0\RETOPT.Domain.pdb
+C:\WORK-MELBER\REPOSITORIO-LOCAL\WepApiPT_TDD\RETOPT.Infrastructure\obj\Debug\net8.0\RETOPT.Infrastructure.csproj.AssemblyReference.cache
+C:\WORK-MELBER\REPOSITORIO-LOCAL\WepApiPT_TDD\RETOPT.Infrastructure\obj\Debug\net8.0\RETOPT.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\WORK-MELBER\REPOSITORIO-LOCAL\WepApiPT_TDD\RETOPT.Infrastructure\obj\Debug\net8.0\RETOPT.Infrastructure.AssemblyInfoInputs.cache
+C:\WORK-MELBER\REPOSITORIO-LOCAL\WepApiPT_TDD\RETOPT.Infrastructure\obj\Debug\net8.0\RETOPT.Infrastructure.AssemblyInfo.cs
+C:\WORK-MELBER\REPOSITORIO-LOCAL\WepApiPT_TDD\RETOPT.Infrastructure\obj\Debug\net8.0\RETOPT.Infrastructure.csproj.CoreCompileInputs.cache
+C:\WORK-MELBER\REPOSITORIO-LOCAL\WepApiPT_TDD\RETOPT.Infrastructure\obj\Debug\net8.0\RETOPT.I.F94693C0.Up2Date
+C:\WORK-MELBER\REPOSITORIO-LOCAL\WepApiPT_TDD\RETOPT.Infrastructure\obj\Debug\net8.0\RETOPT.Infrastructure.dll
+C:\WORK-MELBER\REPOSITORIO-LOCAL\WepApiPT_TDD\RETOPT.Infrastructure\obj\Debug\net8.0\refint\RETOPT.Infrastructure.dll
+C:\WORK-MELBER\REPOSITORIO-LOCAL\WepApiPT_TDD\RETOPT.Infrastructure\obj\Debug\net8.0\RETOPT.Infrastructure.pdb
+C:\WORK-MELBER\REPOSITORIO-LOCAL\WepApiPT_TDD\RETOPT.Infrastructure\obj\Debug\net8.0\ref\RETOPT.Infrastructure.dll

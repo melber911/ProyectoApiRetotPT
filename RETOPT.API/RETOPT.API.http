@@ -1,0 +1,6 @@
+@RETOPT.API_HostAddress = http://localhost:5281
+
+GET {{RETOPT.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
