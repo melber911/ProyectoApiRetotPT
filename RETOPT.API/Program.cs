@@ -12,42 +12,36 @@ using RETOPT.Infrastructure.Security;
 using Microsoft.OpenApi.Models;
 using System.Security.Claims;
 
+// ... otros usings ...
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Otros servicios
+// Configurar servicios
 builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSingleton<ConnectionService>();
 
-// Configuración de Swagger
+// Configurar Swagger
+builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
-    // Esquema de seguridad para JWT
-    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Mi servicio api", Version = "v1" });
+    // Configuración adicional para autenticación
+    var securitySchema = new OpenApiSecurityScheme
     {
-        Description = "Autorización estándar usando Bearer Token. Ejemplo: 'Bearer {tu_token}'",
-        In = ParameterLocation.Header,
-        Type = SecuritySchemeType.ApiKey,
         Name = "Authorization",
-        Scheme = "Bearer"
-    });
-
-    // Requiere autorización en operaciones
-    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+        In = ParameterLocation.Header,
+        Type = SecuritySchemeType.Http,
+        Scheme = "bearer",
+        BearerFormat = "JWT",
+        Description = "JWT Authorization header using the Bearer scheme."
+    };
+    c.AddSecurityDefinition("Bearer", securitySchema);
+    var securityRequirement = new OpenApiSecurityRequirement
     {
-        {
-            new OpenApiSecurityScheme
-            {
-                Reference = new OpenApiReference
-                {
-                    Type = ReferenceType.SecurityScheme,
-                    Id = "Bearer"
-                }
-            },
-            Array.Empty<string>()
-        }
-    });
+        { securitySchema, new[] { "Bearer" } }
+    };
+    c.AddSecurityRequirement(securityRequirement);
 });
+
 // Configurar CORS
 builder.Services.AddCors(options =>
 {
@@ -62,32 +56,32 @@ builder.Services.AddScoped<IProductoService, ProductoService>();
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddScoped<IProductoRepository, ProductoRepository>();
 builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
-// Configuración del esquema JWT
+// Configurar autenticación (JWT)
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
     options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
 })
 .AddJwtBearer(options =>
- {
-     options.TokenValidationParameters = new TokenValidationParameters
-     {
-         ValidateIssuer = true,
-         ValidateAudience = true,
-         ValidateLifetime = true,
-         ValidateIssuerSigningKey = true,
-         ValidIssuer = builder.Configuration["Jwt:Issuer"],
-         ValidAudience = builder.Configuration["Jwt:Audience"],
-         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"])),
-         NameClaimType = ClaimTypes.NameIdentifier // Asegura que NameClaimType esté correctamente mapeado
-     };
- });
-
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = builder.Configuration["Jwt:Issuer"],
+        ValidAudience = builder.Configuration["Jwt:Audience"],
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"])),
+        NameClaimType = ClaimTypes.NameIdentifier // Asegura que NameClaimType esté correctamente mapeado
+    };
+});
 
 builder.Services.AddAuthorization();
+
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Middleware
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

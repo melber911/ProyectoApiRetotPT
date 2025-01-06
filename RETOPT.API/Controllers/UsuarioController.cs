@@ -4,6 +4,7 @@ using Microsoft.IdentityModel.Tokens;
 using RETOPT.Application.DTOs;
 using RETOPT.Application.Interface;
 using RETOPT.Domain.Entity;
+using System.Dynamic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Net;
 using System.Security.Claims;
@@ -41,16 +42,20 @@ namespace RETOPT.API.Controllers
                 return BadRequest(new { Message = "Ocurrió un error al crear el usuario.", Details = ex.Message });
             }
         }
+
         // POST: api/Users/login
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginDto dto)
         {
             var user = await _service.AuthenticateUser(dto.Username, dto.Password);
             if (user == null)
-                return Unauthorized(new { Message = "Invalid credentials." });
+                return Unauthorized("Invalid credentials.");
 
             var token = GenerateJwtToken(user);
-            return Ok(new { Token = token });
+            var response = new ExpandoObject() as IDictionary<string, object>;
+            response["result"] = token;
+
+            return Ok(response);
         }
 
         private string GenerateJwtToken(Usuario user)
@@ -76,51 +81,5 @@ namespace RETOPT.API.Controllers
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
-        //// POST: api/Users/login
-        //[HttpPost("Login")]
-
-        //public async Task<IActionResult> LoginUser(string UserName, string Password)
-        //{
-        //    // Autenticación del usuario
-        //    var user = await _service.AuthenticateUser(UserName, Password);
-        //    if (user == null)
-        //    {
-        //        return Unauthorized(new
-        //        {
-        //            success = false,
-        //            message = "Credenciales Incorrectas",
-        //            result = ""
-        //        });
-        //    }
-
-        //    // Obtener configuración de JWT
-        //    var jwt = _configuration.GetSection("Jwt").Get<JwtDto>();
-        //    var claims = new[]
-        //    {
-        //    new Claim(JwtRegisteredClaimNames.Sub, jwt.Subject),
-        //    new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-        //    new Claim(JwtRegisteredClaimNames.Iat, DateTime.UtcNow.ToString()),
-        //    new Claim("username", UserName)
-        //    };
-
-        //    var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwt.Key));
-        //    var signIn = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-
-        //    var token = new JwtSecurityToken(
-        //        jwt.Issuer,
-        //        jwt.Audience,
-        //        claims,
-        //        expires: DateTime.UtcNow.AddHours(4),
-        //        signingCredentials: signIn
-        //    );
-
-        //    // Retornar el token generado
-        //    return Ok(new
-        //    {
-        //        success = true,
-        //        message = "Éxito",
-        //        result = new JwtSecurityTokenHandler().WriteToken(token)
-        //    });
-        //}
     }
 }

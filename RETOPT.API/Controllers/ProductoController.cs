@@ -13,7 +13,6 @@ namespace RETOPT.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize] // Requiere autenticación
     public class ProductoController : ControllerBase
     {
         private readonly IProductoService _productoService;
@@ -22,17 +21,13 @@ namespace RETOPT.API.Controllers
             _productoService = productoService;
         }
         [HttpPost("Create")]
-        public async Task<IActionResult> Create( 
-            string CodigoBarra="", 
-            string Nombre="", 
-            string Marca="", 
-            string Categoria = "",
-            decimal Precio=0)
+        public async Task<IActionResult> Create([FromBody] CreateTaskDto dto)
         {
             try
             {
-                var UsuarioId = GetUserId();
-                var productoId = await _productoService.CreateProducto(UsuarioId, CodigoBarra, Nombre, Marca, Categoria, Precio);
+                //var UsuarioId = GetUserId() == null ? 1 : dto.usuarioId;
+                var UsuarioId = dto.usuarioId;
+                var productoId = await _productoService.CreateProducto(UsuarioId, dto.CodigoBarra, dto.Nombre, dto.Marca, dto.Categoria, dto.Precio);
                 return CreatedAtAction(nameof(GetByUser), new { usuarioId = UsuarioId }, new { Message = "Producto creado exitosamente.", ProductoId = productoId });
             }
             catch (ArgumentException ex)
